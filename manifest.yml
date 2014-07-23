@@ -1,0 +1,21 @@
+--- 
+applications: 
+  .: 
+    command: 
+    instances: 1
+    mem: 128M
+    url: googlemapsdemo
+    name: googlemapsdemo
+    infra: aws
+    services: 
+      mydbaccess1: 
+        type: mysql
+      mysql-685d: 
+        type: mysql
+    framework: 
+      name: standalone
+      info: 
+        mem: 64M
+        description: Standalone Application
+        exec: 
+    runtime: php
